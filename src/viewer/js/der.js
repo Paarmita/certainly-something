@@ -341,9 +341,6 @@ export const parse = async (der) => {
     certificateServices: getX509Ext(x509.extensions, '1.3.6.1.4.1.311.21.1').parsedValue,
   }
   if (mscs.certificateServices) {
-    mscs = {
-      serviceCAVersion: mscs.criticalExtensions.serviceCAVersion.value,
-    };
     mscs.certificateServices = {
       critical: criticalExtensions.includes('1.3.6.1.4.1.311.21.1'),
     };

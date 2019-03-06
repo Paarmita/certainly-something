@@ -30,10 +30,10 @@ export const strings = {
       long: 'Inc. Country',
     },
 
-   // certificate extensions
+   // Certificate extensions
     '1.3.6.1.4.1.311.21.1': {
       name: {
-        short: 'MS Cert. Services',
+        short: 'MS Cert Services',
         long: 'MS Certificate Services CA Version',
       }
     },

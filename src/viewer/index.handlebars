@@ -385,19 +385,18 @@
               <div class="text">Please open up an issue at <a href="https://github.com/april/certainly-something/issues">Certainly Something</a>, noting the website and unsupported extension identifiers. Thanks!</div>
             </div>
           {{/if}}
-
-          <div class="panel-section-subsection">Microsoft Cryptography</div>
           
           {{! MS Certificate Services CA Version }}
           {{#if this.ext.mscs}}
+           <div class="panel-section-subsection">Microsoft Cryptography</div>
             <div class="panel-section-subheader">
               <span>
                 {{#if this.ext.mscs.certificateServices.critical}}<img class="critical" alt="critical extension" title="This extension has been marked as critical, meaning that clients must reject the certificate if they don't understand it." src="../icons/critical.svg">{{/if~}}
-                Certificate Template
+                Certificate Services CA Version 
               </span>
             </div>
             <div class="panel-list-item">
-              <div class="text">Services CA Version</div>
+              <div class="text">CA Version</div>
               <div class="text long-hex long-hex-box">{{ this.ext.mscs.serviceCAVersion }}</div>
             </div>
           {{/if}}
