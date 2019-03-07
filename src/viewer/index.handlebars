@@ -386,6 +386,21 @@
             </div>
           {{/if}}
 
+          {{! MS Certificate Services CA Version }}
+          {{#if this.ext.msct.certificateServices}}
+           <div class="panel-section-subsection">Microsoft Cryptography</div>
+            <div class="panel-section-subheader">
+              <span>
+                {{#if this.ext.msct.certificateServices.critical}}<img class="critical" alt="critical extension" title="This extension has been marked as critical, meaning that clients must reject the certificate if they don't understand it." src="../icons/critical.svg">{{/if~}}
+                Certificate Services CA Version 
+              </span>
+            </div>
+            <div class="panel-list-item">
+              <div class="text">CA Version</div>
+              <div class="text long-hex long-hex-box">{{ this.ext.msct.certificateServices }}</div>
+            </div>
+          {{/if}}
+
         </div>
         {{/each}}
       </div>
